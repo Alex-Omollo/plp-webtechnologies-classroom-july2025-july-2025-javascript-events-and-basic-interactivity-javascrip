@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <!-- Header with Dark/Light Mode -->
+    <header>
+        <h1>Register Yourself</h1>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <h2>Registration Form</h2>
+        <form id="registerForm">
+        <div class="form-control">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error"></small>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <small class="error"></small>
+        </div>
+
+        <div class="form-control">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter your location">
+            <small class="error"></small>
+        </div>
+
+        <div class="form-control">
+            <label for="expertise">Area of Expertise:</label>
+            <input type="text" id="expertise" placeholder="Enter your expertise">
+            <small class="error"></small>
+        </div>
+
+        <button type="submit">Register</button>
+        <p id="successMessage"></p>
+        </form>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section class="interactive">
+        <h2>Interactive Features</h2>
+
+        <!-- Counter Game -->
+        <div class="counter">
+        <p>Click the button to increase the count!</p>
+        <button id="countBtn">Count: <span id="count">0</span></button>
+        <small>(Double click to reset)</small>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+        <h3 class="faq-question">What is this site about?</h3>
+        <p class="faq-answer">This is a demo registration page with interactive JavaScript features.</p>
+
+        <h3 class="faq-question">How do I register?</h3>
+        <p class="faq-answer">Fill out the form above with your details and submit.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Interactive Registration</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
